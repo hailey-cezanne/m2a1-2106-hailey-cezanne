@@ -1,29 +1,195 @@
-<!-- Module 2 - Activity 1 - Your Portfolio: Skeleton + Flexbox Layout
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hailey Artienda Portfolio</title>
 
-  Build YOUR OWN single-page portfolio - the one you wireframed in Week 1.
-  Keep your wireframe open beside you; it is the blueprint. (No wireframe yet?
-  You may fall back to the Curbside Thai content for this activity.)
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-  Layout only this week - no colours or fonts yet. Replace this comment with a
-  complete page.
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <div class="logo">Logo</div>
+            <div>
+                <h1>Hailey Artienda</h1>
+                <p>Cybersecurity Student</p>
+            </div>
+        </div>
 
-  1. Start from a valid HTML5 skeleton (doctype, <html lang>, head with title +
-     UTF-8 charset, and a short HTML comment describing the page).
-  2. Create a file styles.css and LINK it from the head. From now on ALL styling
-     lives in the stylesheet - never a style="" attribute on an element.
-  3. Build the body with semantic sections from your wireframe: header (site
-     name + nav), a hero, an about section, a projects section, a contact area,
-     and a footer. Use header/nav/main/section/footer, not generic boxes.
-  4. In the nav, an unordered list of links (in-page links like href="#projects"
-     are fine for one page).
-  5. With Flexbox (in styles.css): make the nav list a horizontal row with the
-     bullets removed and a gap; lay the header out as a row with the site name
-     and nav at opposite ends, centred vertically; lay the hero out as a row
-     (text one side, image placeholder the other).
-  6. Give the page a max-width and centre it, with padding so content never
-     touches the screen edges.
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  Research: linking a stylesheet, element vs class selectors, the box model,
-  max-width with auto margins, and Flexbox (flex container, justify/align, gap).
-  Style by CLASS, not IDs. Greyscale only. Delete this comment when it works.
--->
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <p>Hi, I'm</p>
+                <h2>Hailey Artienda</h2>
+                <h3>Cybersecurity Student</h3>
+                <p>Security Mindset • Problem Solver • Lifelong Learner</p>
+                <p>
+                    In the process learning about protecting systems, analyzing risks,
+                    and building secure solutions.
+                </p>
+                <a class="button" href="#contact">Let's Connect</a>
+            </div>
+
+            <div class="hero-image">
+                Image Placeholder
+            </div>
+        </section>
+
+        <section class="trusted">
+            <h2>Trusted By / Inspired By</h2>
+            <div class="logo-row">
+                <div>Logo</div>
+                <div>Logo</div>
+                <div>Logo</div>
+                <div>Logo</div>
+                <div>Logo</div>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2>What I Do</h2>
+
+            <div class="card-row">
+                <article class="card">
+                    <div class="card-image">Image</div>
+                    <h3>Cybersecurity Analysis</h3>
+                    <ul>
+                        <li>Vulnerability assessment</li>
+                        <li>Threat analysis</li>
+                        <li>Risk assessment</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">Image</div>
+                    <h3>Network & System Security</h3>
+                    <ul>
+                        <li>Network monitoring</li>
+                        <li>Firewall basics</li>
+                        <li>Incident response basics</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">Image</div>
+                    <h3>Tools & Automation</h3>
+                    <ul>
+                        <li>Python and Bash</li>
+                        <li>Security tools</li>
+                        <li>Documentation</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Me</h2>
+
+            <div class="about-content">
+                <div class="about-image">Image Placeholder</div>
+
+                <div class="about-text">
+                    <p>
+                        An aspiring cybersecurity analyst currently pursuing my Bachelor’s degree.
+                        Specializing in vulnerability assessment and defensive security.
+                    </p>
+
+                    <div class="mini-card">
+                        <h3>Security Focused</h3>
+                        <p>I focus on understanding threats and building safer systems.</p>
+                    </div>
+
+                    <div class="mini-card">
+                        <h3>Problem Solver</h3>
+                        <p>I break down complex problems into practical solutions.</p>
+                    </div class="mini-card">
+                        <h3>Always Learning</h3>
+                        <p>I stay curious and strive to keep improving my skills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="education-skills" id="skills">
+            <div class="education">
+                <h2>Education</h2>
+                <p><strong>Current - 2030 Expected</strong></p>
+                <p>Bachelor of Science in Cybersecurity</p>
+                <p>Holy Angel University</p>
+
+                <p><strong>2023 - 2025</strong></p>
+                <p>Humanities and Social Sciences</p>
+                <p>Holy Angel University</p>
+            </div>
+
+            <div class="skills">
+                <h2>Skills & Tools</h2>
+                <div class="skill-grid">
+                    <span>Python</span>
+                    <span>GitHub</span>
+                    <span>VS Code</span>
+                    <span>HTML</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>Future Featured Projects</h2>
+
+            <div class="project-row">
+                <article class="project-card">
+                    <div class="card-image">Image</div>
+                    <h3>Network Traffic Analyzer</h3>
+                    <p>To be filled in soon.</p>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-image">Image</div>
+                    <h3>Vulnerability Assessment Lab</h3>
+                    <p>To be filled in soon.</p>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-image">Image</div>
+                    <h3>Log Analysis</h3>
+                    <p>To be filled in soon.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-info">
+                <h2>Let's Connect</h2>
+                <p>Email: haileycezanne@gmail.com</p>
+                <p>Phone: 0965-609-6181</p>
+                <p>Location: Pampanga, Philippines</p>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Hailey Artienda</p>
+        <p>Built with purpose. Secured with passion.</p>
+    </footer>
+</body>
+</html>

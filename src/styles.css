@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #222222;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.site-header,
+main,
+.footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #777777;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    border: 1px solid #333333;
+    padding: 10px;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.brand p {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0;
+    border-bottom: 1px solid #777777;
+}
+
+.hero-text,
+.hero-image {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 42px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.button,
+button {
+    display: inline-block;
+    border: 1px solid #222222;
+    padding: 10px 20px;
+    color: #222222;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.hero-image,
+.card-image,
+.about-image {
+    border: 1px solid #222222;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    padding: 35px 0;
+    border-bottom: 1px solid #777777;
+}
+
+section h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.logo-row,
+.card-row,
+.project-row,
+.education-skills,
+.contact {
+    display: flex;
+    gap: 30px;
+}
+
+.logo-row div {
+    border: 1px solid #222222;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-row {
+    justify-content: space-around;
+}
+
+.card,
+.project-card {
+    flex: 1;
+    border: 1px solid #222222;
+    padding: 15px;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-image,
+.about-text {
+    flex: 1;
+}
+
+.mini-card {
+    border: 1px solid #555555;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.education,
+.skills,
+.contact-info,
+.contact-form {
+    flex: 1;
+}
+
+.skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-grid span {
+    border: 1px solid #222222;
+    padding: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #222222;
+    background-color: transparent;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #777777;
+}
+
+@media (max-width: 768px) {
+    .site-header,
+    .hero,
+    .card-row,
+    .project-row,
+    .about-content,
+    .education-skills,
+    .contact,
+    .footer {
+        flex-direction: column;
+    }
+
+    .nav ul,
+    .logo-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
